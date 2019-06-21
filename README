@@ -1,0 +1,10 @@
+Hello World for creating a ShinyApp that pulls data from SQLServer 
+
+1. Install the latest version of RStudio Desktop from https://www.rstudio.com/
+2. Download the HelloWorld App from https://github.com/mhahsler/ShinyApp_DB_HelloWorld
+3. Follow the instructions to create the database and record the credentials.
+4. Follow the instructions in app.R
+
+Contact your instructor with questions.
+
+Good Luck!
