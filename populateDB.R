@@ -22,6 +22,7 @@ dbWriteTable(conn, "faithful", faithful)
 
 ### Query database to check that the table is there
 rs <- dbGetQuery(conn, "SELECT waiting FROM faithful;")
-rs
+head(rs)
+hist(rs$waiting)
 
 dbDisconnect(conn)

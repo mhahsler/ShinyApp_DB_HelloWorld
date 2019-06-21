@@ -20,7 +20,10 @@
 # Deployment
 # * Create a free tier account on shinyapps.io (https://www.shinyapps.io/).
 # * Connect the account with RStudio under Tools>Global Options>Publishing.
-# * Publish to server (blue symbol next to Run App).
+# * Publish to shinyapps.io (blue symbol next to Run App). Note: This will take a while!
+# * You can manage your deployed apps, check log files, etc. by logging into your dashboard on https://www.shinyapps.io 
+
+
 
 # App Code
 
