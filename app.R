@@ -70,7 +70,7 @@ server <- function(input, output) {
             Database = getOption("database_name"),
             UID      = getOption("database_userid"),
             PWD      = getOption("database_password"),
-            Port     = 1433,
+            Port     = getOption("database_port"),
             TDS_Version="7.2"
         )
         on.exit(dbDisconnect(conn), add = TRUE)

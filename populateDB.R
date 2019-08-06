@@ -1,5 +1,6 @@
 # This code populates the database with a table containing the data used by the app.
 # Run it once before you start the app in app.R
+# Note: This has to be run from within the SMU network!
 
 library(DBI)
 library(odbc)
@@ -12,7 +13,7 @@ conn <- dbConnect(odbc::odbc(),
   Database = getOption("database_name"),
   UID      = getOption("database_userid"),
   PWD      = getOption("database_password"),
-  Port     = 1433,
+  Port     = getOption("database_port"),
   TDS_Version="7.2"
 )
 
