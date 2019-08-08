@@ -7,14 +7,12 @@ library(odbc)
 
 source("credentials.R")
 
-conn <- dbConnect(odbc::odbc(),
-  Driver   = "FreeTDS",
-  Server   = getOption("database_server"),
-  Database = getOption("database_name"),
-  UID      = getOption("database_userid"),
-  PWD      = getOption("database_password"),
-  Port     = getOption("database_port"),
-  TDS_Version="7.2"
+conn <- dbConnector(
+  server   = getOption("database_server"),
+  database = getOption("database_name"),
+  uid      = getOption("database_userid"),
+  pwd      = getOption("database_password"),
+  port     = getOption("database_port")
 )
 
 ### Populate database
